@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wildlife</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="blok">
+        <div class="header__blok">
+          <div class="general__logo">
+            <a href="/" class="general__logo__link">
+              <img
+                src="./assets/generallogo.svg"
+                alt="wildlife"
+                class="general__logo__pic"
+              />
+            </a>
+            <h1 class="general__logo__text">WILDLIFE</h1>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#!" class="header__link">Blog</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Contacts</a>
+              </li>
+              <li
+                class="header__item"
+                onmouseover="hoverSearch()"
+                onmouseout="notHoverSearch()"
+              >
+                <a href="#!" class="header__link">
+                  <img src="./assets/Vector.png" alt="search" class="search" />
+                </a>
+                <input id="search__field" type="text" class="search__field" />
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Sign in</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="survival">
+        <div class="blok">
+          <h2 class="survival__title">Survival</h2>
+          <p class="survival__text">
+            What this means is that we exist to help protect our environment and
+            do in numbers of ways. You can save the planet by donation.
+          </p>
+          <a href="#!" class="survival__link">Donate</a>
+        </div>
+      </section>
+      <section class="latest__articles">
+        <div class="blok">
+          <h2 class="latest__articles__title">Latest articles</h2>
+          <p class="latest__articles__text">Breaking news from the wild</p>
+          <div class="slider">
+            <a href="/" class="slider__link">
+              <img
+                src="./assets/Frame.png"
+                alt="left"
+                class="slider__link__logo"
+              />
+            </a>
+
+            <div class="item item1">
+              <h4 class="slider__title">Deer</h4>
+              <h5 class="slider__subtitle">Naturalist investigation</h5>
+            </div>
+            <div class="item item2">
+              <h4 class="slider__title">Squirrel</h4>
+              <h5 class="slider__subtitle">Kamikaze squirrels</h5>
+            </div>
+            <div class="item item3">
+              <h4 class="slider__title">Bird</h4>
+              <h5 class="slider__subtitle">Birds Fight club</h5>
+            </div>
+
+            <a href="/" class="slider__link">
+              <img
+                src="./assets/Frame1.png"
+                alt="right"
+                class="slider__link__logo"
+              />
+            </a>
+          </div>
+          <div class="get__notified">
+            <div class="notified">Get notified about new amazing articles</div>
+            <div class="form">
+              <form action="#!">
+                <input type="email" placeholder="Email" class="area" />
+                <input type="submit" value="Send" class="submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="blok">
+        <div class="footer__blok">
+          <div class="general__logo">
+            <a href="/" class="general__logo__link">
+              <img
+                src="./assets/logo.png"
+                alt="wildlife"
+                class="general__logo__pic"
+              />
+            </a>
+            <h1 class="general__logo__text">wildlife</h1>
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Articles</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">About us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Learn more</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social__nav">
+            <ul class="footer__social__list">
+              <li class="footer__social__item">
+                <a href="#!" class="footer__social__link">
+                  <img
+                    src="./assets/Fasebook.svg"
+                    alt="fasebook"
+                    class="footer__img"
+                  />
+                </a>
+              </li>
+              <li class="footer__social__item">
+                <a href="#!" class="footer__social__link">
+                  <img
+                    src="./assets/Instagram.svg"
+                    alt="instagram"
+                    class="footer__img"
+                  />
+                </a>
+              </li>
+              <li class="footer__social__item">
+                <a href="#!" class="footer__social__link">
+                  <img
+                    src="./assets/Pinterest.svg"
+                    alt="pinterest"
+                    class="footer__img"
+                  />
+                </a>
+              </li>
+              <li class="footer__social__item">
+                <a href="#!" class="footer__social__link">
+                  <img
+                    src="./assets/Telegram.svg"
+                    alt="telegram"
+                    class="footer__img"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("search__field").style.display = "none";
+      function hoverSearch() {
+        console.log("hover");
+        document.getElementById("search__field").style.display = "inline";
+      }
+      function notHoverSearch() {
+        console.log("not hover");
+        document.getElementById("search__field").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
